@@ -1,0 +1,134 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(bg.jpg);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(15px);
+  color: white;
+}
+
+.container{
+  background-color: rgba(0, 0, 0, 0.349);
+  padding: 22px 95px;
+  border-radius: 23px;
+  text-align: center;
+}
+
+.container-2{
+  background-color: rgba(0, 0, 0, 0.349);
+  padding: 22px 95px;
+  border-radius: 23px;
+  text-align: center;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.desc{
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.text{
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.play-button{
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 3px;
+  height: 35px;
+  width: 125px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 7px;
+  font-size: 15px;
+  color: white;
+  transition: background-color 0.50s,
+    color 0.50s; border-color 0.50s; /* idk how to ignore this error lol */
+}
+
+.play-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.play-button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game {
+  height: 240px;
+  width: 200px;
+  background: var(--theme);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  transition: transform 0.1s;
+}
+
+.game:hover {
+  transform: scale(0.9);
+}
+
+.game-image {
+  background: var(--theme);
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.game-text {
+  line-height: 40px;
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.info{
+  font-size: 13px;
+  position: relative;
+  top: 20px; left: 230px;
+}
+
+.back{
+  font-size: 13px;
+  position: relative;
+  top: 20px; left: 130px;
+}
+
+body{
+  height: 100%;
+  overflow-y: hidden;
+}
